@@ -32,11 +32,20 @@ getToken = (accessKey, secretKey, bucket) ->
 
 
 getKey = (title, extname, dateTime) ->
-  YYYYMMDD = "#{dateTime['year']}#{dateTime['month']}#{dateTime['day']}"
-  HHmmss= "#{dateTime['hour']}#{dateTime['minute']}#{dateTime['second']}"
+  DD = "#{dateTime['day']}"
+  MM = "#{dateTime['month']}"
+  YYYY = "#{dateTime['year']}"
+  HHmmss = "#{dateTime['hour']}#{dateTime['minute']}#{dateTime['second']}"
   rs = utility.randomString("3", utility.md5("#{title}#{HHmmss}"))
+  randomName = config.get("qiniuFileRandomName")
   keyPrefix = config.get("qiniuKeyPrefix") || ""
-  key = "#{keyPrefix}/#{YYYYMMDD}/#{HHmmss}#{rs}#{extname}"
+  
+  key = ""
+  if randomName
+      key = "#{keyPrefix}/#{YYYY}/#{MM}/#{DD}/#{HHmmss}#{rs}#{extname}"
+  else
+     key = "#{keyPrefix}/#{YYYY}/#{MM}/#{DD}/#{title}#{extname}"
+
   key = utils.normalizeFilePath(key)
   return if key.startsWith("/") then key.substring(1) else key
 

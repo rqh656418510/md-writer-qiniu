@@ -36,6 +36,8 @@ qiniuBucket: ""
 qiniuDomain: ""
 # qiniu key prefix #{domain}/#{prefix}/{generate}
 qiniuKeyPrefix: ""
+# qiniu store file with random Name
+qiniuFileRandomName: true
 # Qiniu Style Separtor https://portal.qiniu.com/bucket/default/separator
 qiniuSepartor: "-"
 qiniuStyle: ""

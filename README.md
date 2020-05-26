@@ -1,3 +1,6 @@
+---
+abbrlink: '0'
+---
 # Markdown-Writer for Atom
 
 [![Apm Version](https://img.shields.io/apm/v/markdown-writer.svg)](https://atom.io/packages/markdown-writer)
@@ -31,21 +34,24 @@ More GIFs Here: [Create New Post](http://i.imgur.com/BwntxhB.gif), [Insert Refer
 - [Project](#project)
 
 <!-- /TOC -->
+
 </details>
 
+### Changed：在原有基础的功能上做了微量修改（将图片上传到七牛）
+
+- **本地图片文件如果选择复制到站点则不会上传到七牛，和原项目的逻辑相同**
+- **截图图片文件如果选择保存到站点则不会上传到七牛，和原项目的逻辑相同**
+- **截图图片或者本地图片不选择复制到站点时，默认会上传到七牛，属于新增功能**
+
+> **clone 后的文件夹名称必须是 markdown-writer，即和 packagename 一致 否则插件的功能会有问题**
+
+``` bash
+$ cd ~/.atom/packages
+
+$ git clone https://github.com/rqh656418510/md-writer-qiniu.git markdown-writer
+```
+
 ## Features
-
-### UPDATEING：在原有基础的功能上做了微量修改（图片传到七牛）
-#### 1. 本地图片文件如果选择复制到站点则不会上传到七牛 同原逻辑
-#### 2. ！！本地图片不选择复制到站点只会上传到七牛 原功能缺失！！
-#### 3. 截图图片文件如果选择保存到站点则不会上传到七牛 同原逻辑
-
-> ** clone后的文件夹名称必须是markdown-writer和packagename一致 否则功能会有问题 **
-> ```bash
-> cd ~/.atom/packages
-> git clone https://github.com/chenghm123/md-writer-qiniu.git markdown-writer
-> ```
-> 如果有任何BUG可以联系我修改、联系方式： [QQ邮箱](mailto:chenghm123@qq.com)
 
 ### Blogging
 

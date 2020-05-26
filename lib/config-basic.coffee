@@ -94,3 +94,13 @@ module.exports =
     description: "Qiniu Bucket public domain"
     type: "string"
     default: config.getDefault("qiniuDomain")
+  qiniuKeyPrefix:
+    title: "Qiniu Key Prefix"
+    description: "Qiniu Store Key Prefix"
+    type: "string"
+    default: config.getDefault("qiniuKeyPrefix")
+  qiniuFileRandomName:
+    title: "Qiniu File Random Name"
+    description: "Qiniu Store File With Random Name"
+    type: "boolean"
+    default: config.getDefault("qiniuFileRandomName")
