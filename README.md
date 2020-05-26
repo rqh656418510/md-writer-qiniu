@@ -1,6 +1,3 @@
----
-abbrlink: '0'
----
 # Markdown-Writer for Atom
 
 [![Apm Version](https://img.shields.io/apm/v/markdown-writer.svg)](https://atom.io/packages/markdown-writer)
