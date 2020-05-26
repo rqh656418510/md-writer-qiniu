@@ -39,6 +39,7 @@ More GIFs Here: [Create New Post](http://i.imgur.com/BwntxhB.gif), [Insert Refer
 - **本地图片文件如果选择复制到站点则不会上传到七牛，和原项目的逻辑相同**
 - **截图图片文件如果选择保存到站点则不会上传到七牛，和原项目的逻辑相同**
 - **截图图片或者本地图片不选择复制到站点时，默认会上传到七牛，属于新增功能**
+- **新增支持使用路径前缀、自定义七牛图片文件名的功能**
 
 > **clone 后的文件夹名称必须是 markdown-writer，即和 packagename 一致 否则插件的功能会有问题**
 
